@@ -1,4 +1,4 @@
-import { Box, Image, Center } from "@chakra-ui/react";
+import { Box, Flex, Image, Center } from "@chakra-ui/react";
 import logo from "../logo.png";
 
 const ContentContainer = ({ children }) => (
@@ -14,7 +14,7 @@ const ContentContainer = ({ children }) => (
     />
     <Center w="100%" h="100%">
       <Center bg="white" boxShadow="lg" borderRadius={16} padding={15}>
-        {children}
+        <Flex direction="column">{children}</Flex>
       </Center>
     </Center>
   </Box>
